@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t luiscolumna/docker-graphql:0.0.2 .
+        docker build -t luiscolumna/docker-graphql:latest .
         
     - name: Push Docker Image
       run: |
         docker push luiscolumna/docker-graphql:0.0.2
+        docker push luiscolumna/docker-graphql:latest
       
         
 #     - name: Build the Docker image
